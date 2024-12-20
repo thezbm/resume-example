@@ -4,6 +4,8 @@ This is an example repository for writing resumés in multiple languages with [T
 
 It provides a way to write any chunk of the resumé in multiple languages. This means you only need to update one place at a time when making changes, saving the hassle of keeping multiple files in sync.
 
+The resumé template in this repository is based on [basic-resume](https://github.com/stuxf/basic-typst-resume-template) v0.2.2 by [stuxf](https://github.com/stuxf).
+
 ## Usage
 
 ### Editing
