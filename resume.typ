@@ -1,17 +1,17 @@
-#import "../lib/resume_tmpl.typ": *
+#import "lib/resume_tmpl.typ": *
 
-#let locales = (
-  en-us: 0,
-  zh-cn: 1
+#let languages = (
+  en: 0,
+  zh: 1
 )
 
-#let _resume(locale) = {[
+#let language = sys.inputs.at("lang")
 
 #let _c(..contents) = {
-    contents.at(locales.at(locale))
+    contents.at(languages.at(language))
 }
 #let _s(..strings) = {
-    strings.at(locales.at(locale))
+    strings.at(languages.at(language))
 }
 
 #let name = _s("Peter Parker", "彼得·帕克")
@@ -170,5 +170,3 @@
 // There are also the following generic functions that don't apply any formatting:
 // - #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
 // - #generic-one-by-two(left: "", right: "")
-
-]}

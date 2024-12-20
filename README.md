@@ -1,4 +1,3 @@
-
 ## About this repo
 
 This is an example repository for writing resumés in multiple languages with [Typst](https://typst.app).
@@ -9,7 +8,7 @@ It provides a way to write any chunk of the resumé in multiple languages. This 
 
 ### Editing
 
-Edit `src/resume.typ`.
+Edit `resume.typ`.
 
 Use `_s` and `_c` to write strings and content in multiple languages. For example:
 
@@ -25,14 +24,14 @@ content in Chinese
 ]
 ```
 
-The order of the languages should be consistent throughout the file and should match the order specified in the `locales` dictionary on top of the file.
+The order of the languages should be consistent throughout the file and should match the order specified in the `languages` dictionary on top of the file.
 
 ### Exporting
 
 To export the resumé in a specific language, use the `typst` command line tool. For example, to export the resumé in English:
 
 ```bash
-typst compile resume_en.typ --font-path .
+typst compile resume.typ resume-en.pdf --font-path . --input lang=en
 ```
 
 Using [just](https://github.com/casey/just):
@@ -41,4 +40,4 @@ Using [just](https://github.com/casey/just):
 just pdf en
 ```
 
-To add more languages, refer to `resume_en.typ` and `resume_zh.typ` as examples.
+Other languages can be exported similarly. Available languages are specified in the `languages` dictionary on top of `resume.typ`.
