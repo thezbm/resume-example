@@ -10,12 +10,9 @@
 #let _c(..contents) = {
     contents.at(languages.at(language))
 }
-#let _s(..strings) = {
-    strings.at(languages.at(language))
-}
 
-#let name = _s("Peter Parker", "彼得·帕克")
-#let location = _s("New York City, New York", "纽约州 纽约市")
+#let name = _c("Peter Parker", "彼得·帕克")
+#let location = _c("New York City, New York", "纽约州 纽约市")
 #let email = "peterparker@email.com"
 #let github = "github.com/peterparker"
 #let linkedin = "linkedin.com/in/peterparker"
@@ -31,7 +28,7 @@
   phone: phone,
   personal-site: personal-site,
   accent-color: "#26428b",
-  font: _s("Arial", "Microsoft YaHei"),
+  font: _c("Arial", "Microsoft YaHei"),
 )
 
 == #_c[Education][教育经历]
@@ -39,10 +36,10 @@
 // #edu(dates: "", degree: "", gpa: "", institution: "", location: "")
 
 #edu(
-  institution: _s("Empire State University", "帝国州立大学"),
-  location: _s("New York City, New York", "纽约州 纽约市"),
-  dates: dates-helper(start-date: _s("Aug 2014", "2014年8月"), end-date: _s("May 2018", "2018年5月")),
-  degree: _s("Bachelor of Science in Physics", "物理学学士"),
+  institution: _c("Empire State University", "帝国州立大学"),
+  location: _c("New York City, New York", "纽约州 纽约市"),
+  dates: dates-helper(start-date: _c("Aug 2014", "2014年8月"), end-date: _c("May 2018", "2018年5月")),
+  degree: _c("Bachelor of Science in Physics", "物理学学士"),
 )
 #_c[
 - Cumulative GPA: 4.0\/4.0
@@ -61,10 +58,10 @@
 // #work(company: "", dates: "", location: "", title: "")
 
 #work(
-  title: _s("Freelance Photographer", "自由职业摄影师"),
-  location: _s("New York City, New York", "纽约州 纽约市"),
-  company: _s("Self-Employed", "自雇"),
-  dates: dates-helper(start-date: _s("2015", "2015年"), end-date: _s("Present", "至今")),
+  title: _c("Freelance Photographer", "自由职业摄影师"),
+  location: _c("New York City, New York", "纽约州 纽约市"),
+  company: _c("Self-Employed", "自雇"),
+  dates: dates-helper(start-date: _c("2015", "2015年"), end-date: _c("Present", "至今")),
 )
 #_c[
 - Captured a wide range of photographs for news outlets, clients, and personal projects, specializing in action shots and photojournalism
@@ -77,9 +74,9 @@
 ]
 
 #work(
-  title: _s("Research Assistant", "研究助理"),
-  location: _s("New York City, New York", "纽约州 纽约市"),
-  company: _s("Oscorp Industries", "奥斯科普工业公司"),
+  title: _c("Research Assistant", "研究助理"),
+  location: _c("New York City, New York", "纽约州 纽约市"),
+  company: _c("Oscorp Industries", "奥斯科普工业公司"),
   dates: dates-helper(start-date: "2018", end-date: "2020"),
 )
 #_c[
@@ -93,10 +90,10 @@
 ]
 
 #work(
-  title: _s("Superhero (Spider-Man)", "超级英雄（蜘蛛侠）"),
-  location: _s("New York City, New York", "纽约州 纽约市"),
-  company: _s("Self-Employed", "自雇"),
-  dates: dates-helper(start-date: _s("2010", "2010年"), end-date: _s("Present", "至今")),
+  title: _c("Superhero (Spider-Man)", "超级英雄（蜘蛛侠）"),
+  location: _c("New York City, New York", "纽约州 纽约市"),
+  company: _c("Self-Employed", "自雇"),
+  dates: dates-helper(start-date: _c("2010", "2010年"), end-date: _c("Present", "至今")),
 )
 #_c[
 - Defended New York City from a wide range of threats, including supervillains, organized crime, and natural disasters
@@ -115,9 +112,9 @@
 // #project(dates: "", name: "", role: "", url: "")
 
 #project(
-  name: _s("Battle of the Brooklyn Bridge", "布鲁克林大桥之战"),
-  role: _s("Lead Hero and Strategist", "首席英雄与战略家"),
-  dates: dates-helper(start-date: _s("2018", "2018年"), end-date: _s("2018", "2022年")),
+  name: _c("Battle of the Brooklyn Bridge", "布鲁克林大桥之战"),
+  role: _c("Lead Hero and Strategist", "首席英雄与战略家"),
+  dates: dates-helper(start-date: _c("2018", "2018年"), end-date: _c("2018", "2022年")),
 )
 #_c[
 - Fought against the Green Goblin in a high-stakes battle to protect New York City's iconic Brooklyn Bridge
@@ -134,9 +131,9 @@
 ]
 
 #project(
-  name: _s("Oscorp Nanotech Initiative", "奥斯科普纳米技术计划"),
-  role: _s("Researcher", "研究员"),
-  dates: dates-helper(start-date: _s("2022", "2022年"), end-date: _s("Present", "至今")),
+  name: _c("Oscorp Nanotech Initiative", "奥斯科普纳米技术计划"),
+  role: _c("Researcher", "研究员"),
+  dates: dates-helper(start-date: _c("2022", "2022年"), end-date: _c("Present", "至今")),
   url: "www.oscorpindustries.com/nanotech",
 )
 #_c[

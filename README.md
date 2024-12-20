@@ -12,10 +12,14 @@ The resumé template in this repository is based on [basic-resume](https://githu
 
 Edit `resume.typ`.
 
-Use `_s` and `_c` to write strings and content in multiple languages. For example:
+Use `_c` to write strings or content in multiple languages. For example:
 
 ```typst
-#_s("string in English", "string in Chinese")
+#_c("string in English", "string in Chinese")
+```
+
+```typst
+#_c([content in English], "string in Chinese")
 ```
 
 ```typst
