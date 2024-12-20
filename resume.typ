@@ -31,7 +31,7 @@
   phone: phone,
   personal-site: personal-site,
   accent-color: "#26428b",
-  font: ("New Computer Modern", "Microsoft YaHei"),
+  font: _s("Arial", "Microsoft YaHei"),
 )
 
 == #_c[Education][教育经历]
