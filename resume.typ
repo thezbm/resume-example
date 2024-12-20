@@ -77,7 +77,7 @@
   title: _c("Research Assistant", "研究助理"),
   location: _c("New York City, New York", "纽约州 纽约市"),
   company: _c("Oscorp Industries", "奥斯科普工业公司"),
-  dates: dates-helper(start-date: "2018", end-date: "2020"),
+  dates: dates-helper(start-date: _c("2018", "2018年"), end-date: _c("2020", "2020年")),
 )
 #_c[
 - Assisted in scientific research focused on genetic engineering, nanotechnology, and material science
