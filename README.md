@@ -37,7 +37,7 @@ The order of the languages should be consistent throughout the file and should m
 To export the resumé in a specific language, use the `typst` command line tool. For example, to export the resumé in English:
 
 ```bash
-typst compile resume.typ resume-en.pdf --font-path . --input lang=en
+typst compile resume.typ resume-en.pdf --font-path fonts --input lang=en
 ```
 
 Using [just](https://github.com/casey/just):
