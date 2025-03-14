@@ -28,7 +28,7 @@
   phone: phone,
   personal-site: personal-site,
   accent-color: "#26428b",
-  font: _c("Arial", "Microsoft YaHei"),
+  font: _c("Arial", "Noto Sans SC"),
 )
 
 == #_c[Education][教育经历]
